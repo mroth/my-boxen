@@ -54,7 +54,9 @@ class people::mroth {
   package {
     [
       'imagesnap', #webcams are meant to be CLI tools
-      'pianobar'  #music is meant to be listened to from CLI
+      # 'pianobar'  #music is meant to be listened to from CLI
+      #TODO: pianobar is broken in homebrew due to p11-kit! wait until fixed to reenable
+      #https://github.com/mxcl/homebrew/issues/18979
     ]:
     ensure => present,
   }
