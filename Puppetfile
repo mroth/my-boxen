@@ -37,6 +37,7 @@ github "sudo",     "1.0.0"
 
 github "vagrant",         "2.0.5" #include vagrant
 github "vmware_fusion",   "1.0.0"
+github "virtualbox",      "1.0.1"
 github "macvim",          "1.0.0"
 github "chrome",          "1.1.0"
 github "firefox",         "1.0.5"
