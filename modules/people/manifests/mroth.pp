@@ -56,6 +56,7 @@ class people::mroth {
       'imagesnap', #webcams are meant to be CLI tools
       'pianobar'  #music is meant to be listened to from CLI
     ]:
+    ensure => present,
   }
 
   #TODO: dotfiles!
