@@ -24,4 +24,11 @@ class team::environment {
     nodejs_version => 'v0.10'
   }
 
+  # homebrew packages everyone should have
+  package {
+    [
+      'ssh-copy-id'
+    ]:
+  }
+
 }
