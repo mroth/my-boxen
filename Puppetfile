@@ -34,6 +34,7 @@ github "sudo",     "1.0.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
 github "vagrant",         "2.0.5" #include vagrant
 github "vmware_fusion",   "1.0.0"
 github "macvim",          "1.0.0"
@@ -51,7 +52,7 @@ github "sublime_text_2",  "1.1.0"
 github "textmate",        "1.1.0"
 github "mou",             "1.0.0"
 github "wget",            "1.0.0"
-github "xquartz",         "1.0.0"
+github "xquartz",         "1.1.0"
 github "imagemagick",     "1.2.0"
 github "zsh",             "1.0.0"
 github "heroku",          "2.0.0"
