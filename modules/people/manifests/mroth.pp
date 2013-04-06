@@ -4,7 +4,7 @@
 class people::mroth {
 
   #include ALL the browsers
-  include chrome::stable
+  include chrome
   include firefox
 
   #dev-y stuff that i personally want even outside of projects

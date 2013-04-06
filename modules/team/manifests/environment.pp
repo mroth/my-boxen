@@ -4,7 +4,7 @@
 class team::environment {
 
   # everyone needs all web browsers for testing!
-  include chrome:stable
+  include chrome
   include firefox
 
   # github for mac makes it easier for most people to use git
