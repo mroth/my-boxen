@@ -65,7 +65,7 @@ node default {
   # include nodejs::0-4
   # include nodejs::0-6
   # include nodejs::0-8
-  include nodejs::0-10
+  # include nodejs::0-10 #these are now underscores and we're including in team::environment anyhow
 
   # default ruby versions
   include ruby::1_8_7
