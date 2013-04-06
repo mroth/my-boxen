@@ -20,7 +20,7 @@ class people::mroth {
   #terminalz
   include zsh
   include oh-my-zsh-syntax              #custom module
-  include oh-my-zsh-syntax highlighting #custom module
+  include oh-my-zsh-syntax-highlighting #custom module
   include iterm2::dev
   #TODO: set default color scheme / prefs for iterm2
 
