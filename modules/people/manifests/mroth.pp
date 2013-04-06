@@ -25,7 +25,7 @@ class people::mroth {
   #TODO: set default color scheme / prefs for iterm2
 
   #virtual machines
-  include vmware-fusion
+  include vmware_fusion
   include virtualbox #because we haven't forked over $ for the vagrant vmware plugin yet
   include vagrant
 
