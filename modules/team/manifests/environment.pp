@@ -8,7 +8,7 @@ class team::environment {
   include firefox
 
   # github for mac makes it easier for most people to use git
-  include github::apps::mac
+  # include github::apps::mac #does this exist? or is it a myth?
 
   # team communication
   include hipchat
