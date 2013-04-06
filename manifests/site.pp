@@ -54,7 +54,7 @@ node default {
   include git
   include hub
   include nginx
-  include nvm
+  # include nvm
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
@@ -86,4 +86,7 @@ node default {
     ensure => link,
     target => $boxen::config::repodir
   }
+
+  #most of our customizations for default user are modularized
+  include team::environment
 }
