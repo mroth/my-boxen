@@ -21,7 +21,7 @@ class team::environment {
   # let's make sure everyone has node and coffeescript as a minimum
   include nodejs::v0_10
   nodejs::module { 'coffee-script':
-    nodejs_version => 'v0.10'
+    node_version => 'v0.10'
   }
 
   # homebrew packages everyone should have
