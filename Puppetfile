@@ -57,3 +57,4 @@ github "imagemagick",     "1.2.0"
 github "zsh",             "1.0.0"
 github "heroku",          "2.0.0"
 github "redis",           "1.0.0"
+github "osx",             "1.0.0" #required for zsh
