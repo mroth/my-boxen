@@ -14,6 +14,10 @@ class team::environment {
   include hipchat
 
   # set the global default ruby (auto-installs it if it can)
+  include ruby::1_8_7
+  include ruby::1_9_3
+  include ruby::2_0_0
+
   class { 'ruby::global':
     version => '2.0.0'
   }
@@ -22,6 +26,9 @@ class team::environment {
   include nodejs::v0_10
   nodejs::module { 'coffee-script':
     node_version => 'v0.10'
+  }
+  class { 'nodejs::global': 
+    version => 'v0.10' 
   }
 
   # homebrew packages everyone should have
