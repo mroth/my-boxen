@@ -94,6 +94,11 @@ GITHUBTARBALL
     nodejs (2.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-osx
+  specs:
+    osx (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-redis
   specs:
     redis (1.0.0)
@@ -194,6 +199,7 @@ DEPENDENCIES
   mou (= 1.0.0)
   nginx (= 1.1.0)
   nodejs (= 2.0.0)
+  osx (= 1.0.0)
   redis (= 1.0.0)
   repository (= 2.0.0)
   ruby (= 3.3.1)
