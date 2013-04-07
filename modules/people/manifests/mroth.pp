@@ -43,10 +43,11 @@ class people::mroth {
 
   # some sensible OSX defaults
   # can eventually replace with https://github.com/boxen/puppet-osx/pull/3 ?
-  boxen::osx_defaults { "Disable 'natural scrolling'":
-    key    => 'com.apple.swipescrolldirection',
-    domain => 'NSGlobalDomain',
-    value  => 'false',
+  boxen::osx_defaults { 
+    "Disable 'natural scrolling'":
+      key    => 'com.apple.swipescrolldirection',
+      domain => 'NSGlobalDomain',
+      value  => 'false';
   }
   #TODO: no more aqua colors
 
