@@ -22,7 +22,7 @@ class people::mroth {
   include oh-my-zsh                      #custom module
   include oh-my-zsh::syntax-highlighting #custom module
   include iterm2::dev
-  #TODO: set default color scheme / prefs for iterm2
+  #TODO: set default color scheme / prefs for iterm2 / install solarized
 
   #virtual machines
   include vmware_fusion
@@ -30,7 +30,7 @@ class people::mroth {
   include vagrant
 
   #non-dev stuff for general productivity
-  include hipchat
+  # include hipchat #only needed if org needs it so put in team profile
   include dropbox
   include caffeine
   include sizeup
@@ -40,6 +40,20 @@ class people::mroth {
   #lolcommits is gunna want the below
   include xquartz
   include imagemagick
+
+  #Install Janus
+  repository { 'janus':
+    source => 'carlhuda/janus',
+    path   => "${env['directories']['home']}/.vim",
+  }
+  ~> exec { 'Bootstrap Janus':
+    command     => 'rake',
+    cwd         => "${env['directories']['home']}/.vim",
+    refreshonly => true,
+    environment => [
+      "HOME=${env['directories']['home']}",
+    ],
+  }
 
   # some sensible OSX defaults
   # can eventually replace with https://github.com/boxen/puppet-osx/pull/3 ?
