@@ -41,7 +41,7 @@ class people::mroth {
   include xquartz
   include imagemagick
 
-  #Install Janus
+  #Install Janus #(mode to module? probably)
   repository { 'janus':
     source => 'carlhuda/janus',
     path   => "/Users/${::luser}/.vim",
@@ -69,9 +69,7 @@ class people::mroth {
   package {
     [
       'imagesnap', #webcams are meant to be CLI tools
-      # 'pianobar'  #music is meant to be listened to from CLI
-      #TODO: pianobar is broken in homebrew due to p11-kit! wait until fixed to reenable
-      #https://github.com/mxcl/homebrew/issues/18979
+      'pianobar'  #music is meant to be listened to from CLI
     ]:
     ensure => present,
   }
