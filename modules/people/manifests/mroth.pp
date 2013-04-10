@@ -55,6 +55,16 @@ class people::mroth {
     ],
   }
 
+  #install dotfiles
+  #requires puppet-dotfiles module
+  dotfiles {'mroth':
+    gituser      => 'mroth',
+    projects     => 'dotfiles',
+    dotfiles_dir => 'home',
+    homedir      => "/Users/${::luser}",
+    clobber      => 'true';
+  }
+
   # some sensible OSX defaults
   # can eventually replace with https://github.com/boxen/puppet-osx/pull/3 ?
   boxen::osx_defaults { 
