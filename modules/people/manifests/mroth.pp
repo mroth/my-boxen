@@ -44,14 +44,14 @@ class people::mroth {
   #Install Janus
   repository { 'janus':
     source => 'carlhuda/janus',
-    path   => "${env['directories']['home']}/.vim",
+    path   => "/Users/${::luser}/.vim",
   }
   ~> exec { 'Bootstrap Janus':
     command     => 'rake',
-    cwd         => "${env['directories']['home']}/.vim",
+    cwd         => "/Users/${::luser}/.vim",
     refreshonly => true,
     environment => [
-      "HOME=${env['directories']['home']}",
+      "HOME=/Users/${::luser}/",
     ],
   }
 
