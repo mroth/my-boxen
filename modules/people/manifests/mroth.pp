@@ -68,6 +68,13 @@ class people::mroth {
     ensure => 'link',
     target => "/Users/${::luser}/.homesick/repos/homeshick/home/.homeshick"
   }
+  #
+  # install scm_breeze to make CLI git less annoying
+  #
+  repository { 'scmbreeze':
+    source => 'ndbroadbent/scm_breeze',
+    path   => "/Users/${::luser}/.scm_breeze"
+  }
 
   # some sensible OSX defaults
   # can eventually replace with https://github.com/boxen/puppet-osx/pull/3 ?
