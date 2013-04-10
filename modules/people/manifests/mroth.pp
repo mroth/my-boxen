@@ -68,6 +68,8 @@ class people::mroth {
     ensure => 'link',
     target => "/Users/${::luser}/.homesick/repos/homeshick/home/.homeshick"
   }
+  #TODO: run the first symlink with force?? or rely on me to do manually in interactive mode
+
   #
   # install scm_breeze to make CLI git less annoying
   #
@@ -85,6 +87,9 @@ class people::mroth {
       value  => 'false';
   }
   #TODO: no more aqua colors
+
+  #TODO: install solarized in various places
+  # apple color picker
 
   # more homebrew packages I personally want
   package {
