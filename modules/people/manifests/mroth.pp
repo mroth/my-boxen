@@ -41,7 +41,7 @@ class people::mroth {
   include xquartz
   include imagemagick
 
-  #Install Janus #(mode to module? probably)
+  #Install Janus #(move this to module? probably)
   repository { 'janus':
     source => 'carlhuda/janus',
     path   => "/Users/${::luser}/.vim",
@@ -53,6 +53,20 @@ class people::mroth {
     environment => [
       "HOME=/Users/${::luser}/",
     ],
+  }
+
+  #install and use homeshick for managing dotfiles
+  repository { 'homeshick':
+    source => 'andsens/homeshick',
+    path   => "/Users/${::luser}/.homesick/repos/homeshick"
+  }
+  repository { 'mroth-dotfiles':
+    source => 'mroth/dotfiles',
+    path   => "/Users/${::luser}/.homesick/repos/dotfiles"
+  }
+  file { "/Users/${::luser}/.homeshick":
+    ensure => 'link',
+    target => "/Users/${::luser}/.homesick/repos/homeshick/home/.homeshick"
   }
 
   # some sensible OSX defaults
