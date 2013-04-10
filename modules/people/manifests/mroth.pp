@@ -44,7 +44,7 @@ class people::mroth {
   #
   # define convenience variables for later
   #
-  $home = "/Users/${::luser}"
+  $home = "/Users/${::boxen_user}"
 
   #Install Janus #(move this to module? probably)
   repository { 'janus':
