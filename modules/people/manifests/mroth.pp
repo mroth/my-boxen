@@ -41,32 +41,37 @@ class people::mroth {
   include xquartz
   include imagemagick
 
+  #
+  # define convenience variables for later
+  #
+  $home = "/Users/${::luser}"
+
   #Install Janus #(move this to module? probably)
   repository { 'janus':
     source => 'carlhuda/janus',
-    path   => "/Users/${::luser}/.vim",
+    path   => "${home}/.vim",
   }
   ~> exec { 'Bootstrap Janus':
     command     => 'rake',
-    cwd         => "/Users/${::luser}/.vim",
+    cwd         => "${home}/.vim",
     refreshonly => true,
     environment => [
-      "HOME=/Users/${::luser}/",
+      "HOME=${home}",
     ],
   }
 
   #install and use homeshick for managing dotfiles
   repository { 'homeshick':
     source => 'andsens/homeshick',
-    path   => "/Users/${::luser}/.homesick/repos/homeshick"
+    path   => "${home}/.homesick/repos/homeshick"
   }
   repository { 'mroth-dotfiles':
     source => 'mroth/dotfiles',
-    path   => "/Users/${::luser}/.homesick/repos/dotfiles"
+    path   => "${home}/.homesick/repos/dotfiles"
   }
-  file { "/Users/${::luser}/.homeshick":
+  file { "${home}/.homeshick":
     ensure => 'link',
-    target => "/Users/${::luser}/.homesick/repos/homeshick/home/.homeshick"
+    target => "${home}/.homesick/repos/homeshick/home/.homeshick"
   }
   #TODO: run the first symlink with force?? or rely on me to do manually in interactive mode
 
@@ -75,7 +80,7 @@ class people::mroth {
   #
   repository { 'scmbreeze':
     source => 'ndbroadbent/scm_breeze',
-    path   => "/Users/${::luser}/.scm_breeze"
+    path   => "${home}/.scm_breeze"
   }
 
   # some sensible OSX defaults
