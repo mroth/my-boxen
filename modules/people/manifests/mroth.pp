@@ -87,9 +87,21 @@ class people::mroth {
   # can eventually replace with https://github.com/boxen/puppet-osx/pull/3 ?
   boxen::osx_defaults { 
     "Disable 'natural scrolling'":
+      ensure => present,
       key    => 'com.apple.swipescrolldirection',
       domain => 'NSGlobalDomain',
+      user   => $::boxen_user,
       value  => 'false';
+    "Set aqua color variant to graphite":
+      ensure => present,
+      key    => 'AppleAquaColorVariant',
+      domain => 'NSGlobalDomain',
+      user   => $::boxen_user,
+      type   => 'int',
+      value  => 6;
+  }
+  ~> exec { 'killall Finder':
+    refreshonly => true
   }
   #TODO: no more aqua colors
 
