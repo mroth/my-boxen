@@ -30,7 +30,6 @@ class people::mroth {
   include vagrant
 
   #non-dev stuff for general productivity
-  # include hipchat #only needed if org needs it so put in team profile
   include dropbox
   include caffeine
   include sizeup
@@ -59,6 +58,20 @@ class people::mroth {
       "HOME=${home}",
     ],
   }
+
+  #
+  # TODO: un-ignore vintage mode for ST2
+  # TODO: install package control for sublime text 2
+  # 
+  # additional packages I want:
+  #  - alignment
+  #  - gitgutter
+  #  - puppet
+  #  - coffeescript
+  #  - surround
+  #  - vintage-surround
+  #  - sublime-linter
+  #
 
   #install and use homeshick for managing dotfiles
   repository { 'homeshick':
@@ -103,7 +116,6 @@ class people::mroth {
   ~> exec { 'killall Finder':
     refreshonly => true
   }
-  #TODO: no more aqua colors
 
   #TODO: install solarized in various places
   # apple color picker
@@ -116,7 +128,5 @@ class people::mroth {
     ]:
     ensure => present,
   }
-
-  #TODO: dotfiles!
 
 }
