@@ -49,11 +49,6 @@ GITHUBTARBALL
     git (1.2.2)
 
 GITHUBTARBALL
-  remote: boxen/puppet-github_for_mac
-  specs:
-    github_for_mac (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-heroku
   specs:
     heroku (2.0.0)
@@ -184,6 +179,11 @@ GITHUBTARBALL
     inifile (0.9.0)
 
 GITHUBTARBALL
+  remote: dieterdemeyer/puppet-github_for_mac
+  specs:
+    github_for_mac (1.2.0)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
     stdlib (3.0.0)
@@ -199,7 +199,7 @@ DEPENDENCIES
   flux (= 0.0.1)
   gcc (= 1.0.0)
   git (= 1.2.2)
-  github_for_mac (= 1.0.0)
+  github_for_mac (= 1.2.0)
   heroku (= 2.0.0)
   hipchat (= 1.0.2)
   homebrew (= 1.1.2)

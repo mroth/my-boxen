@@ -30,6 +30,7 @@ class people::mroth {
   include vagrant
 
   #non-dev stuff for general productivity
+  include github_for_mac
   include dropbox
   include caffeine
   include sizeup

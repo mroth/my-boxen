@@ -61,4 +61,5 @@ github "heroku",          "2.0.0"
 github "redis",           "1.0.0"
 github "osx",             "1.0.0" #required for zsh, vmware, lots of stuff
 github "adium",			  "1.1.1"
-github "github_for_mac",  "1.0.0"
+# github "github_for_mac",  "1.0.0"
+github "github_for_mac", "1.2.0", :repo => "dieterdemeyer/puppet-github_for_mac"
