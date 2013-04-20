@@ -66,7 +66,7 @@ class people::mroth {
   # TODO: install ST2 license file?
   #
   repository { 'my-sublime-config':
-    source => 'mroth/my-sublime-config',
+    source => 'https://github.com/mroth/my-sublime-config.git',
     path   => "${home}/Library/Application Support/Sublime Text 2/Packages/User"
   }
   repository { 'package-control':
@@ -82,7 +82,7 @@ class people::mroth {
     path   => "${home}/.homesick/repos/homeshick"
   }
   repository { 'mroth-dotfiles':
-    source => 'mroth/dotfiles',
+    source => 'https://github.com/mroth/dotfiles.git',
     path   => "${home}/.homesick/repos/dotfiles"
   }
   file { "${home}/.homeshick":

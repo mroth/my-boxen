@@ -2,7 +2,7 @@ class projects::pullcrusher {
 
   boxen::project { 'pullcrusher':
     ruby    => '1.9.3',
-    source  => 'mroth/pullcrusher'
+    source  => 'https://github.com/mroth/pullcrusher.git'
   }
 
   package {
