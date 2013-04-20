@@ -61,20 +61,22 @@ class people::mroth {
   }
 
   #
-  # TODO: un-ignore vintage mode for ST2
-  # TODO: install package control for sublime text 2
-  # 
-  # additional packages I want:
-  #  - alignment
-  #  - gitgutter
-  #  - puppet
-  #  - coffeescript
-  #  - surround
-  #  - vintage-surround
-  #  - sublime-linter
+  # install ST2 configuration and package control stuff
+  # TODO: make this override existing non git directories
+  # TODO: install ST2 license file?
   #
+  repository { 'my-sublime-config':
+    source => 'mroth/my-sublime-config',
+    path   => "${home}/Library/Application Support/Sublime Text 2/Packages/User"
+  }
+  repository { 'package-control':
+    source => 'wbond/sublime_package_control',
+    path   => "${home}/Library/Application Support/Sublime Text 2/Packages/Package Control"
+  }
 
-  #install and use homeshick for managing dotfiles
+  #
+  # install and use homeshick for managing dotfiles
+  #
   repository { 'homeshick':
     source => 'andsens/homeshick',
     path   => "${home}/.homesick/repos/homeshick"
