@@ -15,7 +15,6 @@ class people::mroth {
   include macvim
   include sublime_text_2
   include mou
-  #TODO: janus for macvim
 
   #terminalz
   include zsh
@@ -26,7 +25,7 @@ class people::mroth {
 
   #virtual machines
   include vmware_fusion
-  include virtualbox #because we haven't forked over $ for the vagrant vmware plugin yet
+  include virtualbox
   include vagrant
 
   #non-dev stuff for general productivity
@@ -46,7 +45,9 @@ class people::mroth {
   #
   $home = "/Users/${::boxen_user}"
 
-  #Install Janus #(move this to module? probably)
+  #
+  # install Janus for vim
+  #
   repository { 'janus':
     source => 'carlhuda/janus',
     path   => "${home}/.vim",
