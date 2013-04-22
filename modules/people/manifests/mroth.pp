@@ -18,10 +18,7 @@ class people::mroth {
 
   #terminalz
   include zsh
-  include oh-my-zsh                      #custom module
-  include oh-my-zsh::syntax-highlighting #custom module
   include iterm2::dev
-  #TODO: set default color scheme / prefs for iterm2 / install solarized
 
   #virtual machines
   include vmware_fusion
@@ -40,26 +37,17 @@ class people::mroth {
   include xquartz
   include imagemagick
 
+  # some custom modules to add-on to stuff, see modules directory for manifests
+  include oh-my-zsh
+  include oh-my-zsh::plugins::syntax-highlighting
+  include vim-janus
+  #TODO: set default color scheme / prefs for iterm2 / install solarized
+
   #
   # define convenience variables for later
   #
   $home = "/Users/${::boxen_user}"
 
-  #
-  # install Janus for vim
-  #
-  repository { 'janus':
-    source => 'carlhuda/janus',
-    path   => "${home}/.vim",
-  }
-  ~> exec { 'Bootstrap Janus':
-    command     => 'rake',
-    cwd         => "${home}/.vim",
-    refreshonly => true,
-    environment => [
-      "HOME=${home}",
-    ],
-  }
 
   #
   # install ST2 configuration and package control stuff
