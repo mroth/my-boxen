@@ -13,7 +13,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "1.3.0"
+github "boxen", "1.3.2"
 # github "boxen", "2.1.0"
 
 # Core modules for a basic development environment. You can replace
