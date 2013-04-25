@@ -30,8 +30,8 @@ github "nginx",    "1.4.0"
 github "nodejs",   "2.1.0"
 # github "nvm",      "1.0.0" #it seems like nodejs 2.0 above made this obsolete
 github "repository", "2.0.2"
-github "ruby",     "3.6.1"
-github "stdlib",   "3.0.0", :repo => "puppetlabs/puppetlabs-stdlib"
+github "ruby",     "4.0.0"
+github "stdlib",   "4.0.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",     "1.0.0"
 
 # Optional/custom modules. There are tons available at
