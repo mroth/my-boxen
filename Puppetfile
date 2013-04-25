@@ -13,8 +13,8 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "1.3.2"
-# github "boxen", "2.1.0"
+# github "boxen", "1.3.2"
+github "boxen", "2.1.0"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
@@ -29,8 +29,8 @@ github "inifile",  "0.9.0", :repo => "cprice-puppet/puppetlabs-inifile"
 github "nginx",    "1.4.0"
 github "nodejs",   "2.1.0"
 # github "nvm",      "1.0.0" #it seems like nodejs 2.0 above made this obsolete
-# github "repository", "2.0.0"
-github "ruby",     "3.6.0"
+github "repository", "2.0.2"
+github "ruby",     "3.6.1"
 github "stdlib",   "3.0.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",     "1.0.0"
 
@@ -60,7 +60,7 @@ github "imagemagick",     "1.2.0"
 github "zsh",             "1.0.0"
 github "heroku",          "2.0.0"
 github "redis",           "1.0.0"
-github "osx",             "1.0.0" #required for zsh, vmware, lots of stuff
-github "adium",			  "1.1.1"
+github "osx",             "1.1.0" #required for zsh, vmware, lots of stuff
+github "adium",			      "1.1.1"
 # github "github_for_mac",  "1.0.0" #no bueno? try again with 1.0.1?
 github "github_for_mac", "1.2.0", :repo => "dieterdemeyer/puppet-github_for_mac"
