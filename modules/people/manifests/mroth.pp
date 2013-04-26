@@ -49,6 +49,30 @@ class people::mroth {
   #
   $home = "/Users/${::boxen_user}"
 
+  #
+  # configure git
+  #
+  git::config::global {
+    'user.name':
+      value => 'Matthew Rothenberg';
+    'user.email':
+      value => 'mrothenberg@gmail.com';
+    'github.user':
+      value => 'mroth';
+    'color.ui':
+      value => 'true';
+    'core.quotepath':
+      value => 'false';
+    'diff.tool':
+      value => 'opendiff';
+    'merge.tool':
+      value => 'opendiff';
+    'push.default':
+      value => 'simple';
+    'alias.amend':
+      value => 'commit --amend -C HEAD';
+  }
+
 
   #
   # install ST2 configuration and package control stuff
