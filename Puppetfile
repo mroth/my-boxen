@@ -26,7 +26,7 @@ github "hub",      "1.0.0"
 github "inifile",  "0.9.0", :repo => "cprice-puppet/puppetlabs-inifile"
 github "nginx",    "1.4.0"
 # github "nodejs",   "2.1.0"
-mod "nodejs", :ref => "master", :git => "https://github.com/mroth/puppet-nodejs.git"
+mod "nodejs", :ref => "v0.10.5", :git => "https://github.com/mroth/puppet-nodejs.git"
 # github "nvm",      "1.0.0" #it seems like nodejs 2.0 above made this obsolete
 github "repository", "2.0.2"
 github "ruby",     "4.0.0"

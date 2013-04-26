@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/mroth/puppet-nodejs.git
-  ref: master
-  sha: 831a153d870f13b8aa6e9bcd1e696cc12cf5de4b
+  ref: v0.10.5
+  sha: 02f9c0337a6cc83a5b475ed49b1837952af677e0
   specs:
     nodejs (0.0.1)
 
