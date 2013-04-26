@@ -121,7 +121,8 @@ class people::mroth {
       key    => 'com.apple.swipescrolldirection',
       domain => 'NSGlobalDomain',
       user   => $::boxen_user,
-      value  => 'false';
+      value  => 'false',
+      type   => 'bool';
     "Set aqua color variant to graphite":
       ensure => present,
       key    => 'AppleAquaColorVariant',
