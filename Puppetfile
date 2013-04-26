@@ -62,4 +62,5 @@ github "redis",           "1.0.0"
 github "osx",             "1.1.0" #required for zsh, vmware, lots of stuff
 github "adium",			      "1.1.1"
 # github "github_for_mac",  "1.0.0" #no bueno? try again with 1.0.1?
-github "github_for_mac", "1.2.0", :repo => "dieterdemeyer/puppet-github_for_mac"
+github "github_for_mac",  "1.2.0", :repo => "dieterdemeyer/puppet-github_for_mac"
+github "transmission",    "1.0.0"

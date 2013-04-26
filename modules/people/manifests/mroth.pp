@@ -32,6 +32,7 @@ class people::mroth {
   include sizeup
   include vlc
   include flux
+  include transmission
 
   #lolcommits is gunna want the below
   include xquartz
