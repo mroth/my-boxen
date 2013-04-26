@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/mroth/puppet-nodejs.git
+  ref: master
+  sha: 831a153d870f13b8aa6e9bcd1e696cc12cf5de4b
+  specs:
+    nodejs (0.0.1)
+
 GITHUBTARBALL
   remote: boxen/puppet-adium
   specs:
@@ -92,11 +99,6 @@ GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
     nginx (1.4.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-nodejs
-  specs:
-    nodejs (2.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-osx
@@ -215,7 +217,7 @@ DEPENDENCIES
   macvim (= 1.0.0)
   mou (= 1.0.0)
   nginx (= 1.4.0)
-  nodejs (= 2.1.0)
+  nodejs (>= 0)
   osx (= 1.1.0)
   redis (= 1.0.0)
   repository (= 2.0.2)

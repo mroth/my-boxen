@@ -13,7 +13,6 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-# github "boxen", "1.3.2"
 github "boxen", "2.1.0"
 
 # Core modules for a basic development environment. You can replace
@@ -22,12 +21,12 @@ github "boxen", "2.1.0"
 github "dnsmasq",  "1.0.0"
 github "gcc",      "1.0.0"
 github "git",      "1.2.2"
-# mod    "git",      :ref => "fix-git-options", :git => "https://github.com/bradleywright/puppet-git"
 github "homebrew", "1.1.2"
 github "hub",      "1.0.0"
 github "inifile",  "0.9.0", :repo => "cprice-puppet/puppetlabs-inifile"
 github "nginx",    "1.4.0"
-github "nodejs",   "2.1.0"
+# github "nodejs",   "2.1.0"
+mod "nodejs", :ref => "master", :git => "https://github.com/mroth/puppet-nodejs.git"
 # github "nvm",      "1.0.0" #it seems like nodejs 2.0 above made this obsolete
 github "repository", "2.0.2"
 github "ruby",     "4.0.0"
