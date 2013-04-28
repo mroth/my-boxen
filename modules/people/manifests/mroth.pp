@@ -143,6 +143,7 @@ class people::mroth {
     [
       'imagesnap', #webcams are meant to be CLI tools
       'pianobar',  #music is meant to be listened to from CLI
+      'wget',      #files are meant to be downloaded there too
       'imagemagick'
     ]:
     ensure => present,
