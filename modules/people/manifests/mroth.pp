@@ -36,7 +36,7 @@ class people::mroth {
 
   #lolcommits is gunna want the below
   include xquartz
-  include imagemagick
+  # include imagemagick #fuck boxen's custom bottle, use homebrew
 
   # some custom modules to add-on to stuff, see modules directory for manifests
   include oh-my-zsh
@@ -142,7 +142,8 @@ class people::mroth {
   package {
     [
       'imagesnap', #webcams are meant to be CLI tools
-      'pianobar'  #music is meant to be listened to from CLI
+      'pianobar',  #music is meant to be listened to from CLI
+      'imagemagick'
     ]:
     ensure => present,
   }
