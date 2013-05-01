@@ -21,15 +21,15 @@ github "boxen", "2.1.0"
 github "dnsmasq",  "1.0.0"
 github "gcc",      "1.0.0"
 github "git",      "1.2.2"
+# mod "git", :ref => "v1.8.2.1", :git => "https://github.com/mroth/puppet-git.git"
 github "homebrew", "1.1.2"
 github "hub",      "1.0.0"
 github "inifile",  "0.9.0", :repo => "cprice-puppet/puppetlabs-inifile"
 github "nginx",    "1.4.0"
 # github "nodejs",   "2.1.0"
 mod "nodejs", :ref => "v0.10.5", :git => "https://github.com/mroth/puppet-nodejs.git"
-# github "nvm",      "1.0.0" #it seems like nodejs 2.0 above made this obsolete
 github "repository", "2.0.2"
-github "ruby",     "4.0.0"
+github "ruby",     "4.1.0"
 github "stdlib",   "4.0.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",     "1.0.0"
 
@@ -64,3 +64,7 @@ github "adium",			      "1.1.1"
 # github "github_for_mac",  "1.0.0" #no bueno? try again with 1.0.1?
 github "github_for_mac",  "1.2.0", :repo => "dieterdemeyer/puppet-github_for_mac"
 github "transmission",    "1.0.0"
+
+#postgres stuff
+# mod "postgresql", :ref => "v9.2.4", :git => "https://github.com/mroth/puppet-postgresql.git"
+# github "sysctl",              "1.0.0"

@@ -118,7 +118,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (4.0.0)
+    ruby (4.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-sizeup
@@ -226,7 +226,7 @@ DEPENDENCIES
   osx (= 1.1.0)
   redis (= 1.0.0)
   repository (= 2.0.2)
-  ruby (= 4.0.0)
+  ruby (= 4.1.0)
   sizeup (= 1.0.0)
   skype (= 1.0.2)
   stdlib (= 4.0.0)

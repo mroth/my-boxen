@@ -17,3 +17,7 @@ ENV['BOXEN_REPO_NAME'] = 'mroth/my-boxen'
 
 # Submit audit data to an arbitrary HTTP endpoint
 # ENV["BOXEN_WEB_HOOK_URL"] = 'https://some-uri.com/boxen'
+
+# Uncomment me to not use precompiled binaries for ruby-build
+#   - see https://github.com/boxen/puppet-ruby/commit/8703128ffa4153f8a1681f9077a13672ab7845f8
+# ENV["SKIP_PRECOMPILED_RUBIES"] = true
