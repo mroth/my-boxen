@@ -54,7 +54,6 @@ node default {
   include git
   include hub
   include nginx
-  # include nvm
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
@@ -62,10 +61,11 @@ node default {
   }
 
   # node versions
-  # include nodejs::0-4
-  # include nodejs::0-6
-  # include nodejs::0-8
-  # include nodejs::0-10 #these are now underscores and we're including in team::environment anyhow
+  # include nodejs::0_4
+  # include nodejs::0_6
+  # include nodejs::0_8
+  # include nodejs::0_10
+  #these are now underscores and we're including in team::environment anyhow
 
   # default ruby versions
   # include ruby::1_8_7

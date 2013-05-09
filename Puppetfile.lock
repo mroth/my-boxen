@@ -196,7 +196,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
-    stdlib (4.0.0)
+    stdlib (4.0.2)
 
 DEPENDENCIES
   adium (= 1.1.1)
@@ -227,7 +227,7 @@ DEPENDENCIES
   ruby (= 4.1.0)
   sizeup (= 1.0.0)
   skype (= 1.0.2)
-  stdlib (= 4.0.0)
+  stdlib (= 4.0.2)
   sublime_text_2 (= 1.1.0)
   sudo (= 1.0.0)
   textmate (= 1.1.0)
