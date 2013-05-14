@@ -34,7 +34,7 @@ github "sudo",       "1.0.0"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
-github "vagrant",         "2.0.6"
+github "vagrant",         "2.0.7"
 github "vmware_fusion",   "1.0.0"
 github "virtualbox",      "1.0.1"
 github "macvim",          "1.0.0"
