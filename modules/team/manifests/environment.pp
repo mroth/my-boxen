@@ -25,7 +25,8 @@ class team::environment {
   # let's make sure everyone has nodejs and coffeescript as a minimum
   include nodejs::v0_10
   nodejs::module { 'coffee-script':
-    node_version => 'v0.10'
+    node_version => 'v0.10',
+    ensure => '1.6.2'
   }
   class { 'nodejs::global':
     version => 'v0.10'
