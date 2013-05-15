@@ -13,7 +13,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "2.1.0"
+github "boxen", "2.2.2"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
@@ -44,7 +44,7 @@ github "hipchat",         "1.0.4"
 github "skype",           "1.0.2"
 github "dropbox",         "1.1.0"
 github "sizeup",          "1.0.0"
-github "iterm2",          "1.0.2" #iterm2:stable or iterm2:dev
+github "iterm2",          "1.0.2"
 github "caffeine",        "1.0.0"
 github "flux",            "0.0.1"
 github "vlc",             "1.0.0"
@@ -57,7 +57,7 @@ github "imagemagick",     "1.2.0"
 github "zsh",             "1.0.0"
 github "heroku",          "2.0.0"
 github "redis",           "1.0.0"
-github "osx",             "1.1.0" #required for zsh, vmware, lots of stuff
+github "osx",             "1.2.0"
 github "adium",			      "1.1.1"
 # github "github_for_mac",  "1.0.0" #no bueno? try again with 1.0.1?
 github "github_for_mac",  "1.2.0", :repo => "dieterdemeyer/puppet-github_for_mac"

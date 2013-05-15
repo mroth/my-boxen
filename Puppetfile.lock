@@ -6,7 +6,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (2.1.0)
+    boxen (2.2.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-caffeine
@@ -101,7 +101,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-osx
   specs:
-    osx (1.1.0)
+    osx (1.2.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-redis
@@ -200,7 +200,7 @@ GITHUBTARBALL
 
 DEPENDENCIES
   adium (= 1.1.1)
-  boxen (= 2.1.0)
+  boxen (= 2.2.2)
   caffeine (= 1.0.0)
   chrome (= 1.1.0)
   dnsmasq (= 1.0.0)
@@ -221,7 +221,7 @@ DEPENDENCIES
   mou (= 1.0.0)
   nginx (= 1.4.0)
   nodejs (= 2.2.0)
-  osx (= 1.1.0)
+  osx (= 1.2.0)
   redis (= 1.0.0)
   repository (= 2.0.2)
   ruby (= 4.1.0)
