@@ -6,7 +6,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (2.2.2)
+    boxen (2.3.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-caffeine
@@ -200,7 +200,7 @@ GITHUBTARBALL
 
 DEPENDENCIES
   adium (= 1.1.1)
-  boxen (= 2.2.2)
+  boxen (= 2.3.1)
   caffeine (= 1.0.0)
   chrome (= 1.1.0)
   dnsmasq (= 1.0.0)
