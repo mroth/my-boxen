@@ -77,7 +77,7 @@ If you _don't_ want to use boxen-web, folks can get using your boxen like so:
 
 ```
 sudo mkdir -p /opt/boxen
-sudo chown ${USER}:staff/opt/boxen
+sudo chown ${USER}:staff /opt/boxen
 git clone <location of my new git repository> /opt/boxen/repo
 cd /opt/boxen/repo
 script/boxen
@@ -160,7 +160,7 @@ boxen repo (ex. /path/to/your-boxen/Puppetfile):
     github "java",     "1.1.0"
 
 In the above snippet of a customized Puppetfile, the bottom line
-includes the Java module from Github using the tag "1.0.5" from the github repository
+includes the Java module from Github using the tag "1.1.0" from the github repository
 "boxen/puppet-java".  The function "github" is defined at the top of the Puppetfile
 and takes the name of the module, the version, and optional repo location:
 
@@ -257,6 +257,13 @@ we'll fork it under the Boxen org and give you read+write access to our
 fork.
 You'll still be the maintainer, you'll still own the issues and PRs.
 It'll just be listed under the boxen org so folks can find it more easily.
+
+## Integrating with Github Enterprise
+
+If you're using a Github Enterprise instance rather than github.com,
+you will need to set the "BOXEN_GITHUB_ENTERPRISE_URL" and
+"BOXEN_REPO_URL_TEMPLATE" variables in your
+[Boxen config](config/boxen.rb).
 
 ## Halp!
 
