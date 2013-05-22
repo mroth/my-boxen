@@ -91,7 +91,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
-    nginx (1.4.0)
+    nginx (1.4.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
@@ -131,7 +131,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-sublime_text_2
   specs:
-    sublime_text_2 (1.1.0)
+    sublime_text_2 (1.1.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-sudo
@@ -219,7 +219,7 @@ DEPENDENCIES
   iterm2 (= 1.0.2)
   macvim (= 1.0.0)
   mou (= 1.0.0)
-  nginx (= 1.4.0)
+  nginx (= 1.4.1)
   nodejs (= 2.2.0)
   osx (= 1.2.0)
   redis (= 1.0.0)
@@ -228,7 +228,7 @@ DEPENDENCIES
   sizeup (= 1.0.0)
   skype (= 1.0.2)
   stdlib (= 4.0.2)
-  sublime_text_2 (= 1.1.0)
+  sublime_text_2 (= 1.1.1)
   sudo (= 1.0.0)
   textmate (= 1.1.0)
   transmission (= 1.0.0)
