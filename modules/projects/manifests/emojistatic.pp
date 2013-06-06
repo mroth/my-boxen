@@ -12,8 +12,7 @@ class projects::emojistatic {
       'jpegoptim',
       'jpeg',
       'optipng',
-      'pngcrush',
-      'imagemagick'
+      'pngcrush'
     ]:
     ensure => present,
   }
