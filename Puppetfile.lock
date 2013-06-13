@@ -6,7 +6,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (2.3.2)
+    boxen (2.3.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-caffeine
@@ -31,7 +31,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-firefox
   specs:
-    firefox (1.0.6)
+    firefox (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-flux
@@ -116,7 +116,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (5.1.0)
+    ruby (5.2.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-sizeup
@@ -200,12 +200,12 @@ GITHUBTARBALL
 
 DEPENDENCIES
   adium (= 1.1.1)
-  boxen (= 2.3.2)
+  boxen (= 2.3.3)
   caffeine (= 1.0.0)
   chrome (= 1.1.0)
   dnsmasq (= 1.0.0)
   dropbox (= 1.1.0)
-  firefox (= 1.0.6)
+  firefox (= 1.1.0)
   flux (= 0.0.1)
   gcc (= 1.0.0)
   git (= 1.2.4)
@@ -224,7 +224,7 @@ DEPENDENCIES
   osx (= 1.2.0)
   redis (= 1.0.0)
   repository (= 2.2.0)
-  ruby (= 5.1.0)
+  ruby (= 5.2.1)
   sizeup (= 1.0.0)
   skype (= 1.0.2)
   stdlib (= 4.0.2)

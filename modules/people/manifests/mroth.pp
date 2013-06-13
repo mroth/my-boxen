@@ -5,7 +5,7 @@ class people::mroth {
 
   #include ALL the browsers
   include chrome
-  include firefox
+  include firefox::release
 
   #dev-y stuff that i personally want even outside of projects
   include redis
