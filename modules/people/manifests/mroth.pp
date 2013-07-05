@@ -33,6 +33,7 @@ class people::mroth {
   include vlc
   include flux
   include transmission
+  include evernote
 
   #lolcommits is gunna want the below
   include xquartz

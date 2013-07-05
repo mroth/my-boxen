@@ -13,7 +13,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "2.3.5"
+github "boxen", "2.3.6"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
@@ -27,7 +27,7 @@ github "inifile",    "0.9.0", :repo => "cprice-puppet/puppetlabs-inifile"
 github "nginx",      "1.4.2"
 github "nodejs",     "3.2.5"
 github "repository", "2.2.0"
-github "ruby",       "6.0.1"
+github "ruby",       "6.0.2"
 github "stdlib",     "4.0.2", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
 
@@ -62,3 +62,4 @@ github "adium",			      "1.1.1"
 # github "github_for_mac",  "1.0.0" #no bueno? try again with 1.0.1?
 github "github_for_mac",  "1.2.0", :repo => "dieterdemeyer/puppet-github_for_mac"
 github "transmission",    "1.0.0"
+github "evernote",        "2.0.3"
