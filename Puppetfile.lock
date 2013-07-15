@@ -116,7 +116,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-osx
   specs:
-    osx (1.3.1)
+    osx (1.5.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-property_list_key
+  specs:
+    property_list_key (0.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-redis
@@ -244,7 +249,8 @@ DEPENDENCIES
   nginx (= 1.4.2)
   nodejs (= 3.2.8)
   openssl (= 1.0.0)
-  osx (= 1.3.1)
+  osx (= 1.5.0)
+  property_list_key (= 0.1.0)
   redis (= 1.0.0)
   repository (= 2.2.0)
   ruby (= 6.1.1)

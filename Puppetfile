@@ -60,7 +60,8 @@ github "imagemagick",     "1.2.1"
 github "zsh",             "1.0.0"
 github "heroku",          "2.0.0"
 github "redis",           "1.0.0"
-github "osx",             "1.3.1"
+github "osx",             "1.5.0"
+github "property_list_key", "0.1.0" #for puppet-osx
 github "adium",			      "1.1.1"
 # github "github_for_mac",  "1.0.0" #no bueno? try again with 1.0.1?
 github "github_for_mac",  "1.2.0", :repo => "dieterdemeyer/puppet-github_for_mac"

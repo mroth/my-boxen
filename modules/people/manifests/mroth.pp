@@ -121,7 +121,6 @@ class people::mroth {
   }
 
   # some sensible OSX defaults
-  # can eventually replace with https://github.com/boxen/puppet-osx/pull/3 ?
   boxen::osx_defaults {
     "Disable 'natural scrolling'":
       ensure => present,
@@ -141,6 +140,18 @@ class people::mroth {
   ~> exec { 'killall Finder':
     refreshonly => true
   }
+  # some more settings from puppet-osx
+  include osx::global::enable_keyboard_control_access
+  include osx::no_network_dsstores
+  include osx::dock::dim_hidden_apps
+  # include osx::dock::icon_size
+  class { 'osx::dock::icon_size':
+    size => 42
+  }
+  # automatically run software-update
+  include osx::software_update
+  # in case of emergency
+  osx::recovery_message { 'If found, please call +1 5102067426': }
 
   #TODO: install solarized in various places
   # apple color picker
