@@ -35,6 +35,9 @@ class people::mroth {
   include transmission
   include evernote
 
+  #non-dev stuff for general unproductivity
+  include steam
+
   #lolcommits is gunna want the below
   include xquartz
   # include imagemagick #fuck boxen's custom bottle, use homebrew
