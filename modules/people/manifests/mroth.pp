@@ -99,13 +99,16 @@ class people::mroth {
     source => 'andsens/homeshick',
     path   => "${home}/.homesick/repos/homeshick"
   }
-  repository { 'mroth-dotfiles':
+  -> file { "${home}/.homeshick":
+    ensure => 'link',
+    target => "${home}/.homesick/repos/homeshick/home/.homeshick"
+  }
+  -> repository { 'mroth-dotfiles':
     source => 'https://github.com/mroth/dotfiles.git',
     path   => "${home}/.homesick/repos/dotfiles"
   }
-  file { "${home}/.homeshick":
-    ensure => 'link',
-    target => "${home}/.homesick/repos/homeshick/home/.homeshick"
+  ~> exec { '~/.homeshick link dotfiles':
+    refreshonly => true
   }
   #TODO: run the first symlink with force?? or rely on me to do manually in interactive mode
 
@@ -119,7 +122,7 @@ class people::mroth {
 
   # some sensible OSX defaults
   # can eventually replace with https://github.com/boxen/puppet-osx/pull/3 ?
-  boxen::osx_defaults { 
+  boxen::osx_defaults {
     "Disable 'natural scrolling'":
       ensure => present,
       key    => 'com.apple.swipescrolldirection',
