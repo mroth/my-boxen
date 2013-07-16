@@ -38,6 +38,7 @@ class people::mroth {
 
   #non-dev stuff for general unproductivity
   include steam
+  include spotify
 
   #lolcommits is gunna want the below
   include xquartz
