@@ -136,6 +136,11 @@ class people::mroth {
       user   => $::boxen_user,
       type   => 'int',
       value  => 6;
+    "disables Dashboard":
+      user   => $::boxen_user,
+      domain => 'com.apple.dashboard',
+      key    => 'mcx-disabled',
+      value  => true;
   }
   ~> exec { 'killall Finder':
     refreshonly => true
