@@ -107,7 +107,7 @@ class people::mroth {
     source => 'https://github.com/mroth/dotfiles.git',
     path   => "${home}/.homesick/repos/dotfiles"
   }
-  ~> exec { '~/.homeshick link dotfiles':
+  ~> exec { "${home}/.homeshick link dotfiles --force":
     refreshonly => true
   }
   #TODO: run the first symlink with force?? or rely on me to do manually in interactive mode
