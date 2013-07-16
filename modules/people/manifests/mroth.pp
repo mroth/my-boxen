@@ -110,7 +110,6 @@ class people::mroth {
   ~> exec { "${home}/.homeshick link dotfiles --force":
     refreshonly => true
   }
-  #TODO: run the first symlink with force?? or rely on me to do manually in interactive mode
 
   #
   # install scm_breeze to make CLI git less annoying
@@ -149,7 +148,6 @@ class people::mroth {
   include osx::global::enable_keyboard_control_access
   include osx::no_network_dsstores
   include osx::dock::dim_hidden_apps
-  # include osx::dock::icon_size
   class { 'osx::dock::icon_size':
     size => 42
   }
