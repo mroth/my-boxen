@@ -34,6 +34,7 @@ class people::mroth {
   include flux
   include transmission
   include evernote
+  include cloudapp
 
   #non-dev stuff for general unproductivity
   include steam
