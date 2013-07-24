@@ -11,7 +11,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (2.3.6)
+    boxen (3.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-caffeine
@@ -81,12 +81,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.2.1)
+    homebrew (1.4.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-hub
   specs:
-    hub (1.0.0)
+    hub (1.0.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-imagemagick
@@ -236,7 +236,7 @@ GITHUBTARBALL
 DEPENDENCIES
   adium (= 1.1.1)
   autoconf (= 1.0.0)
-  boxen (= 2.3.6)
+  boxen (= 3.0.1)
   caffeine (= 1.0.0)
   chrome (= 1.1.1)
   cloudapp (= 1.0.0)
@@ -250,8 +250,8 @@ DEPENDENCIES
   github_for_mac (= 1.0.1)
   heroku (= 2.0.0)
   hipchat (= 1.0.7)
-  homebrew (= 1.2.1)
-  hub (= 1.0.0)
+  homebrew (= 1.4.1)
+  hub (= 1.0.3)
   imagemagick (= 1.2.1)
   inifile (= 1.0.0)
   iterm2 (= 1.0.3)
