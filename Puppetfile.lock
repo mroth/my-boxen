@@ -196,7 +196,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-virtualbox
   specs:
-    virtualbox (1.0.4)
+    virtualbox (1.0.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-vlc
@@ -275,7 +275,7 @@ DEPENDENCIES
   textmate (= 1.1.0)
   transmission (= 1.0.0)
   vagrant (= 2.0.9)
-  virtualbox (= 1.0.4)
+  virtualbox (= 1.0.5)
   vlc (= 1.0.3)
   vmware_fusion (= 1.0.0)
   wget (= 1.0.0)
