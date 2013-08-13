@@ -156,7 +156,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-skype
   specs:
-    skype (1.0.3)
+    skype (1.0.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-spotify
@@ -266,7 +266,7 @@ DEPENDENCIES
   repository (= 2.2.0)
   ruby (= 6.3.0)
   sizeup (= 1.0.0)
-  skype (= 1.0.3)
+  skype (= 1.0.4)
   spotify (= 1.0.1)
   stdlib (= 4.1.0)
   steam (= 1.0.1)

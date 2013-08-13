@@ -56,7 +56,7 @@ github "osx",               "1.5.0"
 github "property_list_key", "0.1.0" #for puppet-osx
 github "redis",             "1.0.0"
 github "sizeup",            "1.0.0"
-github "skype",             "1.0.3"
+github "skype",             "1.0.4"
 github "spotify",           "1.0.1"
 github "steam",             "1.0.1"
 github "sublime_text_2",    "1.1.2"
