@@ -76,7 +76,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-hipchat
   specs:
-    hipchat (1.0.7)
+    hipchat (1.0.8)
 
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
@@ -249,7 +249,7 @@ DEPENDENCIES
   git (= 1.2.5)
   github_for_mac (= 1.0.1)
   heroku (= 2.0.0)
-  hipchat (= 1.0.7)
+  hipchat (= 1.0.8)
   homebrew (= 1.4.1)
   hub (= 1.0.3)
   imagemagick (= 1.2.1)
