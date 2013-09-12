@@ -11,6 +11,11 @@ class people::mroth {
   include redis
   include heroku
 
+  #golang is so hot right now
+  include go
+  go::version { '1.1.2': }
+  #TODO: set `goenv global 1.1.2`?
+
   #text editors i hate the least
   include macvim
   include sublime_text_2
