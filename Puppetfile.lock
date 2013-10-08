@@ -1,7 +1,7 @@
 GITHUBTARBALL
   remote: boxen/puppet-adium
   specs:
-    adium (1.1.1)
+    adium (1.2.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-autoconf
@@ -161,7 +161,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-skype
   specs:
-    skype (1.0.4)
+    skype (1.0.6)
 
 GITHUBTARBALL
   remote: boxen/puppet-spotify
@@ -196,7 +196,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (2.0.12)
+    vagrant (2.0.13)
 
 GITHUBTARBALL
   remote: boxen/puppet-virtualbox
@@ -239,7 +239,7 @@ GITHUBTARBALL
     stdlib (4.1.0)
 
 DEPENDENCIES
-  adium (= 1.1.1)
+  adium (= 1.2.0)
   autoconf (= 1.0.0)
   boxen (= 3.0.2)
   caffeine (= 1.0.0)
@@ -272,7 +272,7 @@ DEPENDENCIES
   repository (= 2.2.0)
   ruby (= 6.3.4)
   sizeup (= 1.0.0)
-  skype (= 1.0.4)
+  skype (= 1.0.6)
   spotify (= 1.0.1)
   stdlib (= 4.1.0)
   steam (= 1.0.1)
@@ -280,7 +280,7 @@ DEPENDENCIES
   sudo (= 1.0.0)
   textmate (= 1.1.0)
   transmission (= 1.0.0)
-  vagrant (= 2.0.12)
+  vagrant (= 2.0.13)
   virtualbox (= 1.0.5)
   vlc (= 1.0.5)
   vmware_fusion (= 1.0.0)
