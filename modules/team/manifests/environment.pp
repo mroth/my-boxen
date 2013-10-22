@@ -30,7 +30,7 @@ class team::environment {
   }
   nodejs::module { 'bower':
     node_version => 'v0.10',
-    ensure => '1.2.6'
+    ensure => '1.2.7'
   }
   nodejs::module { 'grunt-cli':
     node_version => 'v0.10',
