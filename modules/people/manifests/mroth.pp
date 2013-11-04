@@ -10,6 +10,7 @@ class people::mroth {
   #dev-y stuff that i personally want even outside of projects
   include redis
   include heroku
+  include foreman
 
   #golang is so hot right now
   include go

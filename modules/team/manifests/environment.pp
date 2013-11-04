@@ -10,6 +10,10 @@ class team::environment {
   # github for mac makes it easier for most people to use git
   include github_for_mac
 
+  #heroku style development
+  include heroku
+  include foreman
+
   # team communication
   include hipchat
 
