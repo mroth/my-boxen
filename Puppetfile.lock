@@ -144,11 +144,6 @@ GITHUBTARBALL
     pkgconfig (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-property_list_key
-  specs:
-    property_list_key (0.1.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-redis
   specs:
     redis (1.1.0)
@@ -279,7 +274,6 @@ DEPENDENCIES
   osx (= 2.0.0)
   phantomjs (= 2.0.2)
   pkgconfig (= 1.0.0)
-  property_list_key (= 0.1.0)
   redis (= 1.1.0)
   repository (= 2.2.0)
   ruby (= 6.7.2)

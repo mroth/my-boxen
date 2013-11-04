@@ -72,7 +72,6 @@ github "iterm2",            "1.0.3"
 github "macvim",            "1.0.0"
 github "mou",               "1.1.3"
 github "osx",               "2.0.0"
-github "property_list_key", "0.1.0" #for puppet-osx
 github "redis",             "1.1.0"
 github "sizeup",            "1.0.0"
 github "skype",             "1.0.6"
