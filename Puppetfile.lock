@@ -146,7 +146,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-redis
   specs:
-    redis (2.0.0)
+    redis (2.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-repository
@@ -156,7 +156,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (6.7.5)
+    ruby (6.7.6)
 
 GITHUBTARBALL
   remote: boxen/puppet-sizeup
@@ -274,9 +274,9 @@ DEPENDENCIES
   osx (= 2.1.0)
   phantomjs (= 2.0.2)
   pkgconfig (= 1.0.0)
-  redis (= 2.0.0)
+  redis (= 2.1.0)
   repository (= 2.2.0)
-  ruby (= 6.7.5)
+  ruby (= 6.7.6)
   sizeup (= 1.0.0)
   skype (= 1.0.7)
   spotify (= 1.0.1)
