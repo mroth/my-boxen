@@ -131,7 +131,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-osx
   specs:
-    osx (2.2.1)
+    osx (2.2.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-phantomjs
@@ -271,7 +271,7 @@ DEPENDENCIES
   nginx (= 1.4.3)
   nodejs (= 3.5.0)
   openssl (= 1.0.0)
-  osx (= 2.2.1)
+  osx (= 2.2.2)
   phantomjs (= 2.0.2)
   pkgconfig (= 1.0.0)
   redis (= 2.1.0)
