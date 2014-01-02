@@ -18,12 +18,13 @@ class team::environment {
   include hipchat
 
   # all da rubiez
-  include ruby::1_8_7
-  include ruby::1_9_3
-  include ruby::2_0_0
+  ruby::version { '1.8.7': }
+  ruby::version { '1.9.3': }
+  ruby::version { '2.0.0': }
+  ruby::version { '2.1.0': }
 
   class { 'ruby::global':
-    version => '2.0.0'
+    version => '2.1.0'
   }
 
   # let's make sure everyone has nodejs and coffeescript as a minimum
