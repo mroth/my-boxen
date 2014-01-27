@@ -39,7 +39,7 @@ class team::environment {
   }
   nodejs::module { 'grunt-cli':
     node_version => 'v0.10',
-    ensure => '0.1.11'
+    ensure => '0.1.13'
   }
   class { 'nodejs::global':
     version => 'v0.10'
