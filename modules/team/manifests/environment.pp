@@ -29,9 +29,14 @@ class team::environment {
 
   # let's make sure everyone has nodejs and coffeescript as a minimum
   include nodejs::v0_10
+  class { 'nodejs::global':
+    version => 'v0.10'
+  }
+
+  # nodejs modules i want globally
   nodejs::module { 'coffee-script':
     node_version => 'v0.10',
-    ensure => '1.6.3'
+    ensure => '1.7.1'
   }
   nodejs::module { 'bower':
     node_version => 'v0.10',
@@ -41,9 +46,15 @@ class team::environment {
     node_version => 'v0.10',
     ensure => '0.1.13'
   }
-  class { 'nodejs::global':
-    version => 'v0.10'
+  nodejs::module { 'yo':
+    node_version => 'v0.10',
+    ensure => '1.1.2'
   }
+  nodejs::module { 'generator-webapp':
+    node_version => 'v0.10',
+    ensure => '0.4.7'
+  }
+
 
   # homebrew packages everyone should have
   package {
