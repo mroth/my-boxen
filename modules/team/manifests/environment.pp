@@ -64,4 +64,18 @@ class team::environment {
     ]:
   }
 
+  # get rid of boxen default services that were installed in the past
+  class { 'nginx':
+    ensure => 'absent'
+  }
+  # class { 'dnsmasq':
+  #   ensure => 'absent' #unfortunately this service doesnt have an uninstall! urgh
+  # }
+  service {"dev.dnsmasq":
+    ensure => "stopped",
+  }
+  package { 'dnsmasq':
+    ensure => absent,
+  }
+
 }
