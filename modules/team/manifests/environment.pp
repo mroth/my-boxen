@@ -59,7 +59,8 @@ class team::environment {
   # homebrew packages everyone should have
   package {
     [
-      'ssh-copy-id'
+      'ssh-copy-id',
+      'imagemagick'
     ]:
   }
 
