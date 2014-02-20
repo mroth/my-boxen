@@ -174,7 +174,8 @@ class people::mroth {
       'pianobar',  #music is meant to be listened to from CLI
       'wget',      #files are meant to be downloaded there too
       'gnupg',
-      'pwgen'
+      'pwgen',
+      'nmap'
     ]:
     ensure => present,
   }
