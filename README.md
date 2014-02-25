@@ -37,6 +37,14 @@ MacVim.
 
 How do you do it?
 
+#### OS X 10.9 (Mavericks)
+
+If you are using [`b26abd0` of boxen-web](https://github.com/boxen/boxen-web/commit/b26abd0d681129eba0b5f46ed43110d873d8fdc2)
+or newer, it will be automatically installed as part of Boxen.
+Otherwise, follow instructions below.
+
+#### OS X < 10.9
+
 1. Install Xcode from the Mac App Store.
 1. Open Xcode.
 1. Open the Preferences window (`Cmd-,`).
@@ -70,7 +78,7 @@ install the default configuration from this repo:
 
 ```
 cd /opt/boxen/repo
-script/boxen
+./script/boxen
 ```
 
 You can also skip the above steps and <a href="#customizing">customize your
@@ -92,14 +100,14 @@ sudo mkdir -p /opt/boxen
 sudo chown ${USER}:staff /opt/boxen
 git clone <location of my new git repository> /opt/boxen/repo
 cd /opt/boxen/repo
-script/boxen
+./script/boxen
 ```
 
 Keep in mind this requires you to encrypt your hard drive by default.
 If you do not want to do encrypt your hard drive, you can use the `--no-fde`.
 
 ```
-script/boxen --no-fde
+./script/boxen --no-fde
 ```
 
 It should run successfully, and should tell you to source a shell script
@@ -230,7 +238,7 @@ everyone by default. An example of this might look like so:
 
    include projects::super-top-secret-project
  }
- ```
+```
 
  If you'd like to read more about how Puppet works, we recommend
  checking out [the official documentation](http://docs.puppetlabs.com/)
