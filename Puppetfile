@@ -29,7 +29,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "3.3.7"
+github "boxen", "3.3.8"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
@@ -41,20 +41,18 @@ github "git",        "2.0.0"
 github "go",         "1.1.0"
 github "homebrew",   "1.6.0"
 github "hub",        "1.3.0"
-github "inifile",    "1.0.0", :repo => "puppetlabs/puppetlabs-inifile"
+github "inifile",    "1.0.1", :repo => "puppetlabs/puppetlabs-inifile"
+github "module-data","0.0.1", :repo => "ripienaar/puppet-module-data"
 github "nginx",      "1.4.3"
 github "nodejs",     "3.6.0"
 github "openssl",    "1.0.0"
 github "phantomjs",  "2.1.0"
 github "pkgconfig",  "1.0.0"
-github "repository", "2.2.0"
+github "repository", "2.3.0"
 github "ruby",       "7.2.3"
 github "stdlib",     "4.1.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
 github "xquartz",    "1.1.0"
-
-# puppet-ruby takes advantage of the below starting with v7.0.0
-github "puppet-module-data", "0.0.1", :repo => "ripienaar/puppet-module-data"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
