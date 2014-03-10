@@ -46,7 +46,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-flux
   specs:
-    flux (1.0.0)
+    flux (1.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-foreman
@@ -196,7 +196,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (3.0.5)
+    vagrant (3.0.6)
 
 GITHUBTARBALL
   remote: boxen/puppet-virtualbox
@@ -258,7 +258,7 @@ DEPENDENCIES
   dropbox (= 1.2.0)
   evernote (= 2.0.5)
   firefox (= 1.1.8)
-  flux (= 1.0.0)
+  flux (= 1.0.1)
   foreman (= 1.1.0)
   gcc (= 2.0.100)
   git (= 2.0.0)
@@ -292,7 +292,7 @@ DEPENDENCIES
   sudo (= 1.0.0)
   textmate (= 1.1.0)
   transmission (= 1.0.0)
-  vagrant (= 3.0.5)
+  vagrant (= 3.0.6)
   virtualbox (= 1.0.9)
   vlc (= 1.0.5)
   vmware_fusion (= 1.1.0)
