@@ -39,7 +39,7 @@ github "foreman",    "1.1.0"
 github "gcc",        "2.0.100"
 github "git",        "2.2.0"
 github "go",         "1.1.0" #behind upstream (chgo/zsh incompatibility)
-github "homebrew",   "1.6.0"
+github "homebrew",   "1.6.1"
 github "hub",        "1.3.0"
 github "inifile",    "1.0.1", :repo => "puppetlabs/puppetlabs-inifile"
 github "module-data","0.0.1", :repo => "ripienaar/puppet-module-data"
