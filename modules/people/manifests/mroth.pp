@@ -101,6 +101,16 @@ class people::mroth {
   }
 
   #
+  # Atom text editor
+  # no one has made stuff to manage in boxen just yet but starting a list
+  # so I can manage my modules here eventually
+  #
+  # must have modules:
+  #  - editorconfig
+  #  - vim-mode
+  #  - language-puppet
+
+  #
   # install and use homeshick for managing dotfiles
   #
   repository { 'homeshick':
