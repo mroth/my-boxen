@@ -15,7 +15,7 @@ class team::environment {
   include foreman
 
   # team communication
-  include hipchat
+  # include hipchat
 
   # all da rubiez
   ruby::version { '1.8.7': }
