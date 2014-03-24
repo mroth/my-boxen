@@ -40,7 +40,7 @@ class team::environment {
   }
   nodejs::module { 'bower':
     node_version => 'v0.10',
-    ensure => '1.2.8'
+    ensure => '1.3.1'
   }
   nodejs::module { 'grunt-cli':
     node_version => 'v0.10',
@@ -52,7 +52,7 @@ class team::environment {
   }
   nodejs::module { 'generator-webapp':
     node_version => 'v0.10',
-    ensure => '0.4.7'
+    ensure => '0.4.8'
   }
 
 
