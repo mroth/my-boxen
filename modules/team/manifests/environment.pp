@@ -34,25 +34,15 @@ class team::environment {
   }
 
   # nodejs modules i want globally
-  nodejs::module { 'coffee-script':
-    node_version => 'v0.10',
-    ensure => '1.7.1'
-  }
-  nodejs::module { 'bower':
-    node_version => 'v0.10',
-    ensure => '1.3.1'
-  }
-  nodejs::module { 'grunt-cli':
-    node_version => 'v0.10',
-    ensure => '0.1.13'
-  }
-  nodejs::module { 'yo':
-    node_version => 'v0.10',
-    ensure => '1.1.2'
-  }
-  nodejs::module { 'generator-webapp':
-    node_version => 'v0.10',
-    ensure => '0.4.8'
+  nodejs::module {
+    [
+      'coffee-script',
+      'bower',
+      'grunt-cli',
+      'yo',
+      'generator-webapp'
+    ]:
+    node_version => 'v0.10'
   }
 
 
