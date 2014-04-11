@@ -59,7 +59,7 @@ class people::mroth {
   #
   # define convenience variables for later
   #
-  $home = "/Users/${::boxen_user}"
+  $HOME = "/Users/${::boxen_user}"
 
   #
   # configure git
@@ -93,11 +93,11 @@ class people::mroth {
   #
   repository { 'my-sublime-config':
     source => 'https://github.com/mroth/my-sublime-config.git',
-    path   => "${home}/Library/Application Support/Sublime Text 2/Packages/User"
+    path   => "${HOME}/Library/Application Support/Sublime Text 2/Packages/User"
   }
   repository { 'package-control':
     source => 'wbond/sublime_package_control',
-    path   => "${home}/Library/Application Support/Sublime Text 2/Packages/Package Control"
+    path   => "${HOME}/Library/Application Support/Sublime Text 2/Packages/Package Control"
   }
 
   #
@@ -115,17 +115,17 @@ class people::mroth {
   #
   repository { 'homeshick':
     source => 'andsens/homeshick',
-    path   => "${home}/.homesick/repos/homeshick"
+    path   => "${HOME}/.homesick/repos/homeshick"
   }
-  -> file { "${home}/.homeshick":
+  -> file { "${HOME}/.homeshick":
     ensure => 'link',
-    target => "${home}/.homesick/repos/homeshick/home/.homeshick"
+    target => "${HOME}/.homesick/repos/homeshick/home/.homeshick"
   }
   -> repository { 'mroth-dotfiles':
     source => 'https://github.com/mroth/dotfiles.git',
-    path   => "${home}/.homesick/repos/dotfiles"
+    path   => "${HOME}/.homesick/repos/dotfiles"
   }
-  ~> exec { "${home}/.homeshick link dotfiles --force":
+  ~> exec { "${HOME}/.homeshick link dotfiles --force":
     refreshonly => true
   }
 
@@ -134,7 +134,7 @@ class people::mroth {
   #
   repository { 'scmbreeze':
     source => 'ndbroadbent/scm_breeze',
-    path   => "${home}/.scm_breeze"
+    path   => "${HOME}/.scm_breeze"
   }
 
   # some sensible OSX defaults
