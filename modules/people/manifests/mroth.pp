@@ -5,11 +5,6 @@ class people::mroth {
   include heroku  #TODO: move to team?
   include foreman #TODO: move to team?
 
-  #golang is so hot right now
-  include go
-  go::version { '1.1.2': }
-  #TODO: set `goenv global 1.1.2`?
-
   #terminalz
   include zsh
   include xquartz
@@ -193,7 +188,8 @@ class people::mroth {
       'gnupg',
       'pwgen',
       'macvim',
-      'nmap'
+      'nmap',
+      'go'
     ]:
     ensure => present,
   }
