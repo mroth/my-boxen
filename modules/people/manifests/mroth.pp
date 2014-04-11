@@ -88,13 +88,13 @@ class people::mroth {
 
   #
   # install ST2 configuration and package control stuff
-  # TODO: make this override existing non git directories
-  # TODO: install ST2 license file?
+  # let's just install package control on new machines now since i'm moving away
+  # from ST2 in favor of Atom
   #
-  repository { 'my-sublime-config':
-    source => 'https://github.com/mroth/my-sublime-config.git',
-    path   => "${HOME}/Library/Application Support/Sublime Text 2/Packages/User"
-  }
+  # repository { 'my-sublime-config':
+  #   source => 'https://github.com/mroth/my-sublime-config.git',
+  #   path   => "${HOME}/Library/Application Support/Sublime Text 2/Packages/User"
+  # }
   repository { 'package-control':
     source => 'wbond/sublime_package_control',
     path   => "${HOME}/Library/Application Support/Sublime Text 2/Packages/Package Control"
