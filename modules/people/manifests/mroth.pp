@@ -107,8 +107,12 @@ class people::mroth {
   #
   # must have modules:
   #  - editorconfig
+  #  - atom-alignment
   #  - vim-mode
   #  - language-puppet
+  #  - toggle-quotes
+  #  - travis-ci-status
+  #
 
   #
   # install and use homeshick for managing dotfiles
