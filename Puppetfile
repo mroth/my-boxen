@@ -90,3 +90,6 @@ github "vlc",               "1.1.0"
 github "vmware_fusion",     "1.1.0"
 github "wget",              "1.0.0"
 github "zsh",               "1.0.0"
+
+# Add homebrew cask, and the brewcask provider for boxen/puppet
+github "brewcask",          "0.0.1", :repo => "mroth/puppet-brewcask"

@@ -3,6 +3,10 @@
 # these are the things we decree EVERYONE SHALL HAVE
 class team::environment {
 
+  # we want everyone to be able to use brewcask as a provider
+  # and we'll start using it in the team setup too!
+  include brewcask
+
   # everyone needs all web browsers for testing!
   include chrome
   include firefox
