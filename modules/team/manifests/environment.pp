@@ -7,13 +7,6 @@ class team::environment {
   # and we'll start using it in the team setup too!
   include brewcask
 
-  # everyone needs all web browsers for testing!
-  include chrome
-  include firefox
-
-  # github for mac makes it easier for most people to use git
-  include github_for_mac
-
   #heroku style development
   include heroku
   include foreman
@@ -26,7 +19,6 @@ class team::environment {
   ruby::version { '1.9.3': }
   ruby::version { '2.0.0': }
   ruby::version { '2.1.1': }
-
   class { 'ruby::global':
     version => '2.1.1'
   }
@@ -37,14 +29,13 @@ class team::environment {
     version => 'v0.10'
   }
 
-  # nodejs modules i want globally
+  # nodejs modules everyone should have globally
   nodejs::module {
     [
       'coffee-script',
       'bower',
       'grunt-cli',
-      'yo',
-      'generator-webapp'
+      'yo'
     ]:
     node_version => 'v0.10'
   }
