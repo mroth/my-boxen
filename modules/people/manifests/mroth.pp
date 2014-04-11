@@ -1,60 +1,65 @@
-#some of the things I include here *might* be in the default site manifest,
-#but to make this more portable I shall include them anyhow despite redundancy.
-#in general, I'm going to list everything I consider an "application"... kinda
 class people::mroth {
-
-  #include ALL the browsers
-  include chrome
-  include firefox
 
   #dev-y stuff that i personally want even outside of projects
   include redis
-  include heroku
-  include foreman
+  include heroku  #TODO: move to team?
+  include foreman #TODO: move to team?
 
   #golang is so hot right now
   include go
   go::version { '1.1.2': }
   #TODO: set `goenv global 1.1.2`?
 
-  #text editors i hate the least
-  include macvim
-  include sublime_text_2
-  include mou
-
   #terminalz
   include zsh
-  include iterm2::dev
+  include xquartz
+  # below are custom modules, see modules directory for manifests
+  include oh-my-zsh
+  include oh-my-zsh::plugins::syntax-highlighting
+  include vim-janus
+  # TODO: set default color scheme / prefs for iterm2 / install solarized
 
   #virtual machines
   include vmware_fusion
   include virtualbox
   include vagrant
 
-  #non-dev stuff for general productivity
-  include github_for_mac
-  include dropbox
-  include caffeine
-  include sizeup
-  include vlc
-  include flux
-  include transmission
-  include evernote
-  include cloudapp
+  #
+  # ~/Applications -- via brewcask
+  #
+  package {
+    [
+      # webdevs need all the webs
+      'google-chrome',
+      'firefox',
 
-  #non-dev stuff for general unproductivity
-  include steam
-  include spotify
+      #text editors i hate the least
+      'sublime-text',
+      'mou',
 
-  #lolcommits is gunna want the below
-  include xquartz
-  # include imagemagick #fuck boxen's custom bottle, use homebrew
+      #other dev tools
+      'github',
 
-  # some custom modules to add-on to stuff, see modules directory for manifests
-  include oh-my-zsh
-  include oh-my-zsh::plugins::syntax-highlighting
-  include vim-janus
-  #TODO: set default color scheme / prefs for iterm2 / install solarized
+      #non-dev stuff for general productivity
+      'dropbox',
+      'caffeine',
+      'sizeup',
+      'vlc',
+      'flux',
+      'transmission',
+      'evernote',
+      'cloud',
+
+      #non-dev stuff for general unproductivity
+      'steam',
+      'spotify',
+    ]:
+    provider => 'brewcask'
+  }
+
+
+
+
 
   #
   # define convenience variables for later
@@ -169,8 +174,10 @@ class people::mroth {
   class { 'osx::dock::icon_size':
     size => 42
   }
+
   # automatically run software-update
   include osx::software_update
+
   # in case of emergency
   osx::recovery_message { 'If found, please call +1 5102067426': }
 
@@ -185,6 +192,7 @@ class people::mroth {
       'wget',      #files are meant to be downloaded there too
       'gnupg',
       'pwgen',
+      'macvim',
       'nmap'
     ]:
     ensure => present,
