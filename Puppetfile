@@ -55,7 +55,7 @@ github "repository", "2.3.0"
 github "ruby",       "7.3.0"
 github "stdlib",     "4.1.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
-github "xquartz",    "1.1.0" #behind upstream (dependency resolve error)
+github "xquartz",    "1.1.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
@@ -89,5 +89,4 @@ github "virtualbox",        "1.0.11"
 github "vlc",               "1.1.0"
 github "vmware_fusion",     "1.1.0"
 github "wget",              "1.0.0"
-github "xquartz",           "1.1.0"
 github "zsh",               "1.0.0"
