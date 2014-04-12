@@ -1,4 +1,5 @@
 class people::mroth {
+  $HOME = "/Users/${::boxen_user}"
 
   #dev-y stuff that i personally want even outside of projects
   include redis
@@ -24,18 +25,18 @@ class people::mroth {
   #
   package {
     [
-      # webdevs need all the webs
+      # webdevs need all the webs (except opera lol)
       'google-chrome',
       'firefox',
 
-      #text editors i hate the least
+      # text editors i hate the least
       'sublime-text',
       'mou',
 
-      #other dev tools
+      # other dev tools
       'github',
 
-      #non-dev stuff for general productivity
+      # non-dev stuff for general productivity
       'dropbox',
       'caffeine',
       'sizeup',
@@ -45,21 +46,34 @@ class people::mroth {
       'evernote',
       'cloud',
 
-      #non-dev stuff for general unproductivity
+      # non-dev stuff for general unproductivity
       'steam',
       'spotify',
     ]:
     provider => 'brewcask'
   }
 
+  # CLI stuff -- via homebrew
+  package {
+    [
+      # dev/programming tools and languages
+      'macvim',
+      'go',
 
+      # security tools
+      'nmap',
+      'gnupg',
+      'pwgen',
 
-
-
-  #
-  # define convenience variables for later
-  #
-  $HOME = "/Users/${::boxen_user}"
+      # media related tools
+      #  (I always want imagemagick but not listed here since it's in team,
+      #   and the homebrew provider in boxen can't have duplicates) :-/
+      'imagesnap', #webcams are meant to be CLI tools
+      'pianobar',  #music is meant to be listened to from CLI
+      'wget',      #files are meant to be downloaded there too
+    ]:
+    ensure => present
+  }
 
   #
   # configure git
@@ -115,7 +129,9 @@ class people::mroth {
   #
 
   #
-  # install and use homeshick for managing dotfiles
+  # DOTFILES
+  #  - install and use homeshick for managing dotfiles
+  #  - install my dotfiles
   #
   repository { 'homeshick':
     source => 'andsens/homeshick',
@@ -141,7 +157,9 @@ class people::mroth {
     path   => "${HOME}/.scm_breeze"
   }
 
+  #
   # some sensible OSX defaults
+  #
   boxen::osx_defaults {
     "Disable 'natural scrolling'":
       ensure => present,
@@ -177,25 +195,11 @@ class people::mroth {
   # automatically run software-update
   include osx::software_update
 
-  # in case of emergency
+  # in case of lost device (yeah right)
+  # also gives my phone number to the entire interweb yay opensource
   osx::recovery_message { 'If found, please call +1 5102067426': }
 
   #TODO: install solarized in various places
-  # apple color picker
-
-  # more homebrew packages I personally want
-  package {
-    [
-      'imagesnap', #webcams are meant to be CLI tools
-      'pianobar',  #music is meant to be listened to from CLI
-      'wget',      #files are meant to be downloaded there too
-      'gnupg',
-      'pwgen',
-      'macvim',
-      'nmap',
-      'go'
-    ]:
-    ensure => present,
-  }
+  # such as apple color picker
 
 }
