@@ -34,6 +34,7 @@ class people::mroth {
       'vmware-fusion',
 
       # other dev tools
+      'dash',
       'github',
 
       # non-dev stuff for general productivity
