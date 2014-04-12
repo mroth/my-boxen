@@ -192,9 +192,6 @@ class people::mroth {
     size => 42
   }
 
-  # automatically run software-update
-  include osx::software_update
-
   # in case of lost device (yeah right)
   # also gives my phone number to the entire interweb yay opensource
   osx::recovery_message { 'If found, please call +1 5102067426': }
