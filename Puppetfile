@@ -63,9 +63,8 @@ github "xquartz",    "1.1.1"
 github "heroku",            "2.1.1"
 github "osx",               "2.2.2"
 github "redis",             "2.1.1", :repo => "grosser/puppet-redis"
-github "vagrant",           "3.0.7"
-github "virtualbox",        "1.0.11"
-github "vmware_fusion",     "1.1.0"
+# github "vagrant",           "3.0.7"
+# github "virtualbox",        "1.0.11"
 github "zsh",               "1.0.0"
 
 # Add homebrew-cask, and the brewcask provider for boxen/puppet

@@ -15,11 +15,6 @@ class people::mroth {
   include vim-janus
   # TODO: set default color scheme / prefs for iterm2 / install solarized
 
-  #virtual machines
-  include vmware_fusion
-  include virtualbox
-  include vagrant
-
   #
   # ~/Applications -- via brewcask
   #
@@ -32,6 +27,11 @@ class people::mroth {
       # text editors i hate the least
       'sublime-text',
       'mou',
+
+      # virtual machines
+      'vagrant',         # probably put this in team
+      'virtualbox',      # probably put this in team
+      'vmware-fusion',
 
       # other dev tools
       'github',
