@@ -53,24 +53,30 @@ class people::mroth {
     provider => 'brewcask'
   }
 
-  # CLI stuff -- via homebrew
+  # CLI tools -- via homebrew
   package {
     [
       # dev/programming tools and languages
-      'macvim',
       'go',
+      'jq',
+      'macvim',
+
+      # network tools
+      'curl',
+      'wget',
 
       # security tools
-      'nmap',
       'gnupg',
+      'nmap',
       'pwgen',
 
       # media related tools
       #  (I always want imagemagick but not listed here since it's in team,
       #   and the homebrew provider in boxen can't have duplicates) :-/
-      'imagesnap', #webcams are meant to be CLI tools
-      'pianobar',  #music is meant to be listened to from CLI
-      'wget',      #files are meant to be downloaded there too
+      'ffmpeg',
+      'imagesnap',
+      'pianobar',
+
     ]:
     ensure => present
   }
