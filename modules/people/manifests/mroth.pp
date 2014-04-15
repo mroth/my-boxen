@@ -168,13 +168,6 @@ class people::mroth {
   # some sensible OSX defaults
   #
   boxen::osx_defaults {
-    "Disable 'natural scrolling'":
-      ensure => present,
-      key    => 'com.apple.swipescrolldirection',
-      domain => 'NSGlobalDomain',
-      user   => $::boxen_user,
-      value  => 'false',
-      type   => 'bool';
     "Set aqua color variant to graphite":
       ensure => present,
       key    => 'AppleAquaColorVariant',
@@ -191,7 +184,9 @@ class people::mroth {
   ~> exec { 'killall Finder':
     refreshonly => true
   }
-  # some more settings from puppet-osx
+  class { 'osx::global::natural_mouse_scrolling':
+    enabled => true
+  }
   include osx::global::enable_keyboard_control_access
   include osx::no_network_dsstores
   include osx::dock::dim_hidden_apps
