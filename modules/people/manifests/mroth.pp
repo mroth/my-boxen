@@ -74,7 +74,7 @@ class people::mroth {
       # media related tools
       #  (I always want imagemagick but not listed here since it's in team,
       #   and the homebrew provider in boxen can't have duplicates) :-/
-      'ffmpeg',
+      # 'ffmpeg, #too many deps until boxen gets homebrew bottles worked out
       'imagesnap',
       'pianobar',
 
