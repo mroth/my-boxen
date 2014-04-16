@@ -39,7 +39,7 @@ class people::mroth {
 
       # non-dev stuff for general productivity
       'dropbox',
-      'caffeine',
+      # 'caffeine',
       'sizeup',
       'vlc',
       'flux',
