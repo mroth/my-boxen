@@ -1,7 +1,7 @@
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (3.4.2)
+    boxen (3.6.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
@@ -36,7 +36,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.8.1)
+    homebrew (1.9.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-hub
@@ -124,7 +124,7 @@ GITHUBTARBALL
     module-data (0.0.3)
 
 DEPENDENCIES
-  boxen (= 3.4.2)
+  boxen (= 3.6.0)
   brewcask (= 0.0.1)
   dnsmasq (= 1.0.1)
   foreman (= 1.2.0)
@@ -132,7 +132,7 @@ DEPENDENCIES
   git (= 2.3.0)
   go (= 1.1.0)
   heroku (= 2.1.1)
-  homebrew (= 1.8.1)
+  homebrew (= 1.9.0)
   hub (= 1.3.0)
   inifile (= 1.0.3)
   module-data (= 0.0.3)

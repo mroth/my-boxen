@@ -29,7 +29,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "3.4.2"
+github "boxen", "3.6.0"
 
 # Support for default hiera data in modules
 
@@ -43,7 +43,7 @@ github "foreman",    "1.2.0"
 github "gcc",        "2.0.100"
 github "git",        "2.3.0"
 github "go",         "1.1.0" #behind upstream (chgo/zsh incompatibility)
-github "homebrew",   "1.8.1"
+github "homebrew",   "1.9.0"
 github "hub",        "1.3.0"
 github "inifile",    "1.0.3", :repo => "puppetlabs/puppetlabs-inifile"
 github "nginx",      "1.4.3"
