@@ -61,7 +61,7 @@ github "xquartz",    "1.1.1"
 # https://github.com/boxen.
 
 github "heroku",            "2.1.1"
-github "osx",               "2.4.0"
+github "osx",               "2.5.0"
 github "redis",             "2.1.1", :repo => "grosser/puppet-redis"
 # github "vagrant",           "3.0.7"
 # github "virtualbox",        "1.0.11"
