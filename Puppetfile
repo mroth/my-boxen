@@ -40,7 +40,7 @@ github "module-data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 
 github "dnsmasq",     "1.0.1"
 github "foreman",     "1.2.0"
-github "gcc",         "2.0.100"
+github "gcc",         "2.0.101"
 github "git",         "2.3.1"
 github "go",          "1.1.0"
 github "homebrew",    "1.9.2"
