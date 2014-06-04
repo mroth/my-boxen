@@ -53,7 +53,7 @@ github "phantomjs",   "2.3.0"
 github "pkgconfig",   "1.0.0"
 github "repository",  "2.3.0"
 github "ruby",        "7.3.0"
-github "stdlib",      "4.1.0", :repo => "puppetlabs/puppetlabs-stdlib"
+github "stdlib",      "4.2.1", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",        "1.0.0"
 github "xquartz",     "1.1.1"
 
