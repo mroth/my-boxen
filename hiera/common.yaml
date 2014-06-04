@@ -1,0 +1,4 @@
+---
+# override default ruby provider
+"ruby::provider": "rbenv"
+"ruby::build::ensure": "v20140524"
