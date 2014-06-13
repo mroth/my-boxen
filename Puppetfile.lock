@@ -61,7 +61,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-osx
   specs:
-    osx (2.5.0)
+    osx (2.7.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-phantomjs
@@ -91,7 +91,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
-    xquartz (1.1.1)
+    xquartz (1.2.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-zsh
@@ -139,7 +139,7 @@ DEPENDENCIES
   nginx (= 1.4.3)
   nodejs (= 3.7.0)
   openssl (= 1.0.0)
-  osx (= 2.5.0)
+  osx (= 2.7.0)
   phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
   redis (= 2.1.1)
@@ -147,6 +147,6 @@ DEPENDENCIES
   ruby (= 8.0.3)
   stdlib (= 4.2.1)
   sudo (= 1.0.0)
-  xquartz (= 1.1.1)
+  xquartz (= 1.2.0)
   zsh (= 1.0.0)
 
