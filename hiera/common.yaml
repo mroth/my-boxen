@@ -1,4 +1,6 @@
 ---
-# override default ruby provider
+## override default ruby provider
 "ruby::provider": "rbenv"
-"ruby::build::ensure": "v20140524"
+## below is default since puppet-ruby v8.0.4, but keep commented out if need
+## to change in the futre
+# "ruby::build::ensure": "v20140524"
