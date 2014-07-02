@@ -104,9 +104,9 @@ GITHUBTARBALL
     redis (2.1.1)
 
 GITHUBTARBALL
-  remote: mroth/puppet-brewcask
+  remote: phinze/puppet-brewcask
   specs:
-    brewcask (0.0.1)
+    brewcask (0.0.3)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
@@ -125,7 +125,7 @@ GITHUBTARBALL
 
 DEPENDENCIES
   boxen (= 3.6.2)
-  brewcask (= 0.0.1)
+  brewcask (= 0.0.3)
   dnsmasq (= 1.0.1)
   foreman (= 1.2.0)
   gcc (= 2.1.0)
