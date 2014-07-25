@@ -25,6 +25,7 @@ class people::mroth {
       'firefox',
 
       # text editors i hate the least
+      'atom',
       'sublime-text',
       'mou',
 
@@ -39,7 +40,7 @@ class people::mroth {
 
       # non-dev stuff for general productivity
       'dropbox',
-      # 'caffeine',
+      'caffeine',
       'sizeup',
       'vlc',
       'flux',
