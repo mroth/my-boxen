@@ -74,6 +74,11 @@ GITHUBTARBALL
     pkgconfig (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-redis
+  specs:
+    redis (3.1.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-repository
   specs:
     repository (2.3.0)
@@ -97,11 +102,6 @@ GITHUBTARBALL
   remote: boxen/puppet-zsh
   specs:
     zsh (1.0.0)
-
-GITHUBTARBALL
-  remote: grosser/puppet-redis
-  specs:
-    redis (2.1.1)
 
 GITHUBTARBALL
   remote: phinze/puppet-brewcask
@@ -142,7 +142,7 @@ DEPENDENCIES
   osx (= 2.7.0)
   phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
-  redis (= 2.1.1)
+  redis (= 3.1.0)
   repository (= 2.3.0)
   ruby (= 8.1.2)
   stdlib (= 4.2.1)
