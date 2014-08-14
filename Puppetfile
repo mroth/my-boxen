@@ -61,7 +61,7 @@ github "xquartz",     "1.2.0"
 # https://github.com/boxen.
 
 github "heroku",            "2.1.1"
-github "osx",               "2.7.0"
+github "osx",               "2.7.1"
 github "redis",             "3.1.0"
 # github "vagrant",           "3.0.7"
 # github "virtualbox",        "1.0.11"
