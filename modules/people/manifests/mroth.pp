@@ -37,6 +37,7 @@ class people::mroth {
       # other dev tools
       'dash',
       'github',
+      'speedtest_cli'
 
       # non-dev stuff for general productivity
       'dropbox',
@@ -59,6 +60,7 @@ class people::mroth {
   package {
     [
       # dev/programming tools and languages
+      'elixir',
       'go',
       'jq',
       'macvim',
