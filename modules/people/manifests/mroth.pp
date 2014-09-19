@@ -37,7 +37,6 @@ class people::mroth {
       # other dev tools
       'dash',
       'github',
-      'speedtest_cli'
 
       # non-dev stuff for general productivity
       'dropbox',
@@ -68,6 +67,7 @@ class people::mroth {
       # network tools
       'curl',
       'wget',
+      'speedtest_cli',
 
       # security tools
       'gnupg',
