@@ -6,7 +6,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
-    dnsmasq (1.1.0)
+    dnsmasq (2.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-foreman
@@ -16,7 +16,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-gcc
   specs:
-    gcc (2.1.1)
+    gcc (2.2.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-git
@@ -36,7 +36,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.9.4)
+    homebrew (1.9.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-hub
@@ -86,7 +86,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (8.1.2)
+    ruby (8.1.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-sudo
@@ -106,7 +106,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: phinze/puppet-brewcask
   specs:
-    brewcask (0.0.3)
+    brewcask (0.0.4)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
@@ -121,21 +121,21 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: ripienaar/puppet-module-data
   specs:
-    module_data (0.0.3)
+    module_data (0.0.4)
 
 DEPENDENCIES
   boxen (= 3.6.2)
-  brewcask (= 0.0.3)
-  dnsmasq (= 1.1.0)
+  brewcask (= 0.0.4)
+  dnsmasq (= 2.0.0)
   foreman (= 1.2.0)
-  gcc (= 2.1.1)
+  gcc (= 2.2.0)
   git (= 2.6.0)
   go (= 1.1.0)
   heroku (= 2.1.1)
-  homebrew (= 1.9.4)
+  homebrew (= 1.9.5)
   hub (= 1.3.0)
   inifile (= 1.1.1)
-  module_data (= 0.0.3)
+  module_data (= 0.0.4)
   nginx (= 1.4.3)
   nodejs (= 3.8.2)
   openssl (= 1.0.0)
@@ -144,7 +144,7 @@ DEPENDENCIES
   pkgconfig (= 1.0.0)
   redis (= 3.1.0)
   repository (= 2.3.0)
-  ruby (= 8.1.2)
+  ruby (= 8.1.4)
   stdlib (= 4.2.1)
   sudo (= 1.0.0)
   xquartz (= 1.2.0)
