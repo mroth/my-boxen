@@ -48,6 +48,12 @@ class team::environment {
       'forego'
     ]:
   }
+  package {
+    [
+      'xquartz'
+    ]:
+    provider => 'brewcask'
+  }
 
   # get rid of boxen default services that were installed in the past
   class { 'nginx':

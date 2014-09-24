@@ -6,7 +6,7 @@ class people::mroth {
 
   #terminalz
   include zsh
-  include xquartz
+  # include xquartz
 
   # below are custom modules, see modules directory for manifests
   include oh-my-zsh

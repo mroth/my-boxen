@@ -84,11 +84,6 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-xquartz
-  specs:
-    xquartz (1.2.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-zsh
   specs:
     zsh (1.0.0)
@@ -135,6 +130,5 @@ DEPENDENCIES
   ruby (= 8.1.4)
   stdlib (= 4.2.1)
   sudo (= 1.0.0)
-  xquartz (= 1.2.0)
   zsh (= 1.0.0)
 
