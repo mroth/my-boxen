@@ -3,12 +3,11 @@ class people::mroth {
 
   #dev-y stuff that i personally want even outside of projects
   include redis
-  include heroku  #TODO: move to team?
-  include foreman #TODO: move to team?
 
   #terminalz
   include zsh
   include xquartz
+
   # below are custom modules, see modules directory for manifests
   include oh-my-zsh
   include oh-my-zsh::plugins::syntax-highlighting

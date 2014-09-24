@@ -39,7 +39,7 @@ github "module_data", "0.0.4", :repo => "ripienaar/puppet-module-data"
 # some/most of these if you want, but it's not recommended.
 
 github "dnsmasq",     "2.0.0"
-github "foreman",     "1.2.0"
+# github "foreman",     "1.2.0"
 github "gcc",         "2.2.0"
 github "git",         "2.6.0"
 github "go",          "1.1.0"
@@ -60,7 +60,7 @@ github "xquartz",     "1.2.0"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
-github "heroku",      "2.1.1"
+# github "heroku",      "2.1.1"
 github "osx",         "2.7.1"
 github "redis",       "3.1.0"
 github "zsh",         "1.0.0"

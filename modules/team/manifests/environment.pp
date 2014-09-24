@@ -7,13 +7,6 @@ class team::environment {
   # and we'll start using it in the team setup too!
   include brewcask
 
-  #heroku style development
-  include heroku
-  include foreman
-
-  # team communication
-  # include hipchat
-
   # all da rubiez
   ruby::version { '1.8.7': }
   ruby::version { '1.9.3': }
@@ -50,7 +43,9 @@ class team::environment {
   package {
     [
       'ssh-copy-id',
-      'imagemagick'
+      'imagemagick',
+      'heroku-toolbelt',
+      'forego'
     ]:
   }
 

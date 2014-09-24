@@ -9,11 +9,6 @@ GITHUBTARBALL
     dnsmasq (2.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-foreman
-  specs:
-    foreman (1.2.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-gcc
   specs:
     gcc (2.2.0)
@@ -27,11 +22,6 @@ GITHUBTARBALL
   remote: boxen/puppet-go
   specs:
     go (1.1.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-heroku
-  specs:
-    heroku (2.1.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
@@ -127,11 +117,9 @@ DEPENDENCIES
   boxen (= 3.6.2)
   brewcask (= 0.0.4)
   dnsmasq (= 2.0.0)
-  foreman (= 1.2.0)
   gcc (= 2.2.0)
   git (= 2.6.0)
   go (= 1.1.0)
-  heroku (= 2.1.1)
   homebrew (= 1.9.5)
   hub (= 1.3.0)
   inifile (= 1.1.1)
