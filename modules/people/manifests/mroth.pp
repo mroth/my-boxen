@@ -25,7 +25,6 @@ class people::mroth {
 
       # text editors i hate the least
       'atom',
-      'sublime-text',
       'mou',
 
       # virtual machines
@@ -108,20 +107,6 @@ class people::mroth {
       value => 'commit --amend -C HEAD';
   }
 
-
-  #
-  # install ST2 configuration and package control stuff
-  # let's just install package control on new machines now since i'm moving away
-  # from ST2 in favor of Atom
-  #
-  # repository { 'my-sublime-config':
-  #   source => 'https://github.com/mroth/my-sublime-config.git',
-  #   path   => "${HOME}/Library/Application Support/Sublime Text 2/Packages/User"
-  # }
-  repository { 'package-control':
-    source => 'wbond/sublime_package_control',
-    path   => "${HOME}/Library/Application Support/Sublime Text 2/Packages/Package Control"
-  }
 
   #
   # Atom text editor
