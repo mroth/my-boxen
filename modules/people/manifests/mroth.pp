@@ -59,8 +59,11 @@ class people::mroth {
       # dev/programming tools and languages
       'elixir',
       'go',
-      'jq',
       'macvim',
+
+      #cli dev tools
+      'jq',
+      'gh',
 
       # network tools
       'curl',
